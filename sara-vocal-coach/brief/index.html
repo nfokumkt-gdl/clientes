@@ -686,7 +686,7 @@
 
 <script>
 (function(){
-const NFOKU_WA = "5233XXXXXXXX"; // ← número de WhatsApp de NFOKU con lada (52 + 10 dígitos)
+const NFOKU_WA = "523311130209"; // WhatsApp NFOKU: 52 (México) + 33 1113 0209
 const KEY = "nfoku-brief-sara-v2";
 const Q = [
  {id:"d1",t:"Audiencia prioritaria",h:"La campaña de octubre habla principalmente a una persona. Elige una.",type:"one",opts:[
@@ -770,10 +770,21 @@ function progress(){
 }
 function summary(n){
   if(!n)return "Aún no hay elecciones marcadas.";
-  let t="BRIEF SARA VOCAL COACH × NFOKU\nElecciones del cliente · "+new Date().toLocaleDateString("es-MX",{day:"numeric",month:"long",year:"numeric"})+"\n"+n+" de "+Q.length+" decisiones\n";
-  Q.forEach(q=>{const a=A[q.id];if(!a)return;const sel=(a.sel||[]).map(i=>q.opts[i][0]);if(a.other&&a.other.trim())sel.push("Propia: "+a.other.trim());if(!sel.length&&!(a.note||"").trim())return;
-    t+="\n"+q.id.toUpperCase()+" · "+q.t+"\n"+(sel.length?sel.map(x=>"  ✔ "+x).join("\n"):"  (sin opción)")+(a.note&&a.note.trim()?"\n  Nota: "+a.note.trim():"")+"\n";});
-  const f=document.getElementById("final").value.trim();if(f)t+="\nCOMENTARIOS FINALES\n  "+f+"\n";
+  const G=[["AUDIENCIA",["d1","d2"]],["TONO Y PROMESA",["d3","d4"]],["CONTENIDO",["d5","d6","d7"]],["PIEZAS DE OCTUBRE",["d8","d9"]],["OFERTA",["d10","d11"]],["GRABACIÓN",["d12"]]];
+  const L="━━━━━━━━━━━━━━";
+  const fecha=new Date().toLocaleDateString("es-MX",{day:"numeric",month:"long",year:"numeric"});
+  let t="🎤 *BRIEF SARA VOCAL COACH × NFOKU*\n_Elecciones del cliente · "+fecha+"_\nAvance: *"+n+" de "+Q.length+"* decisiones"+(n===Q.length?" ✅":"")+"\n";
+  G.forEach(([g,ids])=>{
+    let block="";
+    ids.forEach(id=>{const q=Q.find(x=>x.id===id),a=A[id];if(!a)return;
+      const sel=(a.sel||[]).map(i=>q.opts[i][0]);if(a.other&&a.other.trim())sel.push("Propia: “"+a.other.trim()+"”");
+      const note=(a.note||"").trim();if(!sel.length&&!note)return;
+      block+="\n*"+(Q.indexOf(q)+1)+". "+q.t+"*\n"+(sel.length?sel.map(x=>"• "+x).join("\n"):"• (sin opción marcada)")+(note?"\n📝 _"+note.replace(/\n+/g," ")+"_":"")+"\n";});
+    if(block)t+="\n"+L+"\n*"+g+"*\n"+block;
+  });
+  const f=document.getElementById("final").value.trim();
+  if(f)t+="\n"+L+"\n*COMENTARIOS FINALES*\n"+f+"\n";
+  t+="\n"+L+"\n_Enviado desde el brief interactivo de NFOKU_";
   return t;
 }
 document.addEventListener("change",e=>{
