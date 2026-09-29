@@ -256,7 +256,7 @@
       <div><small>Agencia</small><b>NFOKU · Guadalajara, Jal.</b></div>
       <div><small>Versión</small><b>1.0 · 29 sep 2026</b></div>
       <div><small>Periodo de campaña</small><b>Octubre 2026 · 1 mes</b></div>
-      <div><small>Estado</small><b>Para elección y aprobación del cliente</b></div>
+      <div><small>Estado</small><b>Para elección del cliente</b></div>
     </div>
   </div>
 </header>
@@ -400,9 +400,9 @@
     <div class="grid c3">
       <div class="card">
         <span class="tag red">Prioritario</span>
-        <h4>La adulta que siempre quiso cantar</h4>
-        <p><strong>Mujer, 30–50 años</strong>, Zapopan / GDL. Canta en casa, en el coche, en karaoke. Le da pena su voz o cree que "no nació" para esto. Busca un espacio seguro, no una escuela para niños.</p>
-        <p><em>Motivador:</em> disfrute personal, confianza, superar el miedo escénico.<br><em>Freno:</em> vergüenza, "ya es tarde", tiempo.</p>
+        <h4>Joven con aspiración artística</h4>
+        <p><strong>18–30 años</strong>, canta en bandas, coros, iglesia o sube covers. Quiere técnica real y feedback profesional. Es el segmento donde Facebook muestra oportunidad (25–34).</p>
+        <p><em>Motivador:</em> mejorar de verdad, presentarse en público.<br><em>Freno:</em> costo, desconfianza en "cursos milagro".</p>
       </div>
       <div class="card">
         <span class="tag">Secundario</span>
@@ -412,9 +412,9 @@
       </div>
       <div class="card">
         <span class="tag gold">Oportunidad</span>
-        <h4>Joven con aspiración artística</h4>
-        <p><strong>18–30 años</strong>, canta en bandas, coros, iglesia o sube covers. Quiere técnica real y feedback profesional. Es el segmento donde Facebook muestra oportunidad (25–34).</p>
-        <p><em>Motivador:</em> mejorar de verdad, presentarse en público.<br><em>Freno:</em> costo, desconfianza en "cursos milagro".</p>
+        <h4>La adulta que siempre quiso cantar</h4>
+        <p><strong>Mujer, 30–50 años</strong>, Zapopan / GDL. Canta en casa, en el coche, en karaoke. Le da pena su voz o cree que "no nació" para esto. Busca un espacio seguro, no una escuela para niños.</p>
+        <p><em>Motivador:</em> disfrute personal, confianza, superar el miedo escénico.<br><em>Freno:</em> vergüenza, "ya es tarde", tiempo.</p>
       </div>
     </div>
     <div class="callout">
@@ -484,9 +484,9 @@
     </div>
     <h3>Mensajes por segmento</h3>
     <ul>
-      <li><strong>Adulta:</strong> "Nunca es tarde para cantar como siempre quisiste. Empieza con una clase muestra."</li>
-      <li><strong>Padres:</strong> "Técnica vocal real para tu hijo, con una coach que sí se dedica a la voz."</li>
       <li><strong>Joven aspirante:</strong> "Deja de adivinar. Aprende la técnica que usan los profesionales."</li>
+      <li><strong>Padres:</strong> "Técnica vocal real para tu hijo, con una coach que sí se dedica a la voz."</li>
+      <li><strong>Adulta:</strong> "Nunca es tarde para cantar como siempre quisiste. Empieza con una clase muestra."</li>
     </ul>
   <div class="decide" data-q="d3,d4"><div class="dh"><b>Tu elección</b><span>Cómo suena Sara Vocal Coach</span></div></div>
   </section>
@@ -576,7 +576,7 @@
     <table>
       <tr><th>Campaña</th><th>Objetivo en Meta</th><th>Audiencia</th><th>Creativos</th><th>Peso sugerido</th></tr>
       <tr><td><b>A · Alcance local</b></td><td>Reproducciones de video / Interacción</td><td>Radio de 10–15 km alrededor de la escuela · 25–54 · intereses: canto, karaoke, música, teatro musical</td><td>Piezas 01, 03, 04, 10</td><td>40%</td></tr>
-      <tr><td><b>B · Leads</b></td><td>Mensajes (WhatsApp / Messenger / IG) o Clientes potenciales</td><td>Misma geografía · segmentación por persona (adulta / padres / jóvenes)</td><td>Piezas 02, 05, 08</td><td>40%</td></tr>
+      <tr><td><b>B · Leads</b></td><td>Mensajes (WhatsApp / Messenger / IG) o Clientes potenciales</td><td>Misma geografía · segmentación por persona (jóvenes / padres / adulta)</td><td>Piezas 02, 05, 08</td><td>40%</td></tr>
       <tr><td><b>C · Remarketing</b></td><td>Mensajes / Conversiones</td><td>Quien vio ≥50% de un video, interactuó con el perfil o visitó la landing en los últimos 30 días</td><td>Pieza 06 + FAQ</td><td>20%</td></tr>
     </table>
     </div>
@@ -653,11 +653,6 @@
       <li>Disponibilidad de Sara y de la sede para las dos sesiones de grabación de octubre (semanas 0 y 2).</li>
       <li>Historial de inscripciones de los últimos 6 meses para establecer línea base.</li>
     </ul>
-    <h3>Aprobación</h3>
-    <div class="sign">
-      <div><b>Por Sara Vocal Coach</b>Sara Montes · Directora<br>Fecha: ____________</div>
-      <div><b>Por NFOKU</b>Omar · Director de agencia<br>Fecha: ____________</div>
-    </div>
   </section>
 
 <section class="block" id="enviar">
@@ -673,6 +668,7 @@
         <button class="btn ghost" id="btnCopy" type="button">Copiar resumen</button>
         <button class="btn ghost" id="btnReset" type="button">Borrar y empezar de nuevo</button>
       </div>
+      <div id="pending" style="margin-top:14px;font-size:14px"></div>
       <pre id="summary">Aún no hay elecciones marcadas.</pre>
     </div>
   </section>
@@ -691,14 +687,14 @@
 <script>
 (function(){
 const NFOKU_WA = "5233XXXXXXXX"; // ← número de WhatsApp de NFOKU con lada (52 + 10 dígitos)
-const KEY = "nfoku-brief-sara-v1";
+const KEY = "nfoku-brief-sara-v2";
 const Q = [
  {id:"d1",t:"Audiencia prioritaria",h:"La campaña de octubre habla principalmente a una persona. Elige una.",type:"one",opts:[
-   ["La adulta que siempre quiso cantar","Mujer 30–50, Zapopan/GDL. Busca confianza y un espacio seguro."],
+   ["Joven con aspiración artística","18–30. Bandas, coros, covers. Quiere técnica real."],
    ["Mamás y papás buscando actividad para su hijo","35–45. Compara con academias de teatro musical."],
-   ["Joven con aspiración artística","18–30. Bandas, coros, covers. Quiere técnica real."]]},
+   ["La adulta que siempre quiso cantar","Mujer 30–50, Zapopan/GDL. Busca confianza y un espacio seguro."]]},
  {id:"d2",t:"Audiencia secundaria",h:"A quién le damos un segundo lugar. Puedes marcar varias o ninguna.",type:"many",min:0,opts:[
-   ["La adulta que siempre quiso cantar"],["Mamás y papás"],["Joven con aspiración artística"],["Ninguna, solo la prioritaria"]]},
+   ["Joven con aspiración artística"],["Mamás y papás"],["La adulta que siempre quiso cantar"],["Ninguna, solo la prioritaria"]]},
  {id:"d3",t:"Arquetipo y tono",h:"Cómo se siente hablar contigo en redes. Elige uno.",type:"one",opts:[
    ["La mentora cercana","Sabe más que tú, pero está de tu lado. Exigente con la técnica, generosa con la persona."],
    ["La coach de resultados","Directa, retadora, sin rodeos. Habla de disciplina y avances medibles."],
@@ -709,7 +705,7 @@ const Q = [
    ["Nunca es tarde para cantar como siempre quisiste"],
    ["Aprende a cantar de verdad, con técnica y sin pena"],
    ["Tu voz ya está ahí. Yo te enseño a sacarla"]]},
- {id:"d5",t:"Pilares de contenido a priorizar",h:"Marca los 2 o 3 que quieres que dominen octubre.",type:"many",min:2,max:3,opts:[
+ {id:"d5",t:"Pilares de contenido a priorizar",h:"Marca hasta 3 (recomendamos 2 o 3) que quieres que dominen octubre.",type:"many",min:1,max:3,opts:[
    ["Practica conmigo","Ejercicios guiados de 30–60 s. Tu formato más visto."],
    ["Transformación","Alumnos antes/después; el momento en que se atreven."],
    ["Desmitificación","Por qué alguien canta bonito, errores comunes, análisis de canciones."],
@@ -722,7 +718,7 @@ const Q = [
    ["3 por semana","Sostenible con una sesión de grabación cada 2 semanas."],
    ["4 por semana","Ritmo recomendado para la campaña."],
    ["5 o más por semana","Requiere las dos sesiones y contenido grabado por Sara entre semana."]]},
- {id:"d8",t:"Piezas del bloque de octubre",h:"De las 10 propuestas, marca al menos 6 que sí quieres producir.",type:"many",min:6,opts:[
+ {id:"d8",t:"Piezas del bloque de octubre",h:"Marca las que sí quieres producir (recomendamos al menos 6 de las 10).",type:"many",min:1,opts:[
    ["01 · Practica conmigo: respiración en 60 s"],["02 · 'Ella llegó con pena y hoy canta esto'"],["03 · ¿Por qué hay gente que canta bonito?"],["04 · Descubre tu rango vocal en 30 s"],["05 · Bienvenida a la escuela (recorrido)"],["06 · Anuncio de clase muestra"],["07 · Top 5 errores al cantar"],["08 · Testimonio: mamá de un alumno"],["09 · Preguntas frecuentes"],["10 · Sara analiza una canción en tendencia"]]},
  {id:"d9",t:"Alumnos en el contenido",h:"Las piezas de transformación necesitan alumnos reales. Elige una.",type:"one",opts:[
    ["Sí, con autorización firmada","NFOKU prepara el formato de consentimiento."],
@@ -763,6 +759,8 @@ function progress(){
   const n=Q.filter(answered).length,p=Math.round(n/Q.length*100);
   document.getElementById("pbar").style.width=p+"%";document.getElementById("ppct").textContent=p+"%";
   document.getElementById("pcount").textContent=n+" de "+Q.length+" decisiones";
+  const pend=Q.filter(q=>!answered(q));
+  document.getElementById("pending").innerHTML=pend.length?'<b style="color:#F2B705">Pendientes:</b> '+pend.map(q=>`<a href="#q-${q.id}" style="color:#fff;text-decoration:underline;margin-right:10px">${q.id.toUpperCase()} · ${q.t}</a>`).join(''):'';
   const txt=summary(n);document.getElementById("summary").textContent=txt;
   const wa=document.getElementById("btnWa"),ok=n===Q.length;
   wa.setAttribute("aria-disabled",ok?"false":"true");
