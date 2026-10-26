@@ -34,6 +34,9 @@ clientes/
         ├── og.jpg                    ← miniatura de WhatsApp (logo + Elena + número)
         ├── img/                      ← fotos optimizadas, logos sin fondo, icono
         └── fonts/                    ← Cormorant Garamond + Jost (auto-hospedadas)
+    └── services/                     ← misma landing en INGLÉS (usa img/ y fonts/ de servicios/)
+        ├── index.html
+        └── og.jpg                    ← miniatura de WhatsApp en inglés
 ```
 
 > **Landings públicas** (como `evara-studio/servicios/`) sí se indexan en Google y su miniatura va en **JPG de menos de 300 KB**: WhatsApp no muestra la vista previa si la imagen pesa más.
@@ -57,5 +60,6 @@ clientes/
 | Línea gráfica | https://nfokumkt-gdl.github.io/clientes/sara-vocal-coach/branding/ |
 | Inicio Evara Studio | https://nfokumkt-gdl.github.io/clientes/evara-studio/ |
 | Landing de servicios Evara (pública) | https://nfokumkt-gdl.github.io/clientes/evara-studio/servicios/ |
+| Evara landing in English (pública) | https://nfokumkt-gdl.github.io/clientes/evara-studio/services/ |
 
 > El repositorio es público: cualquiera con la ruta puede abrir los documentos. Las páginas internas llevan `noindex` para no aparecer en Google; las landings públicas de clientes no.
