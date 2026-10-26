@@ -26,7 +26,17 @@ clientes/
         └── 2026-10-quincena-1/
             ├── index.html
             └── og.png
+└── evara-studio/
+    ├── index.html                    ← Inicio del cliente (privado, noindex)
+    ├── og.jpg
+    └── servicios/                    ← landing PÚBLICA para compartir por WhatsApp
+        ├── index.html
+        ├── og.jpg                    ← miniatura de WhatsApp (logo + Elena + número)
+        ├── img/                      ← fotos optimizadas, logos sin fondo, icono
+        └── fonts/                    ← Cormorant Garamond + Jost (auto-hospedadas)
 ```
+
+> **Landings públicas** (como `evara-studio/servicios/`) sí se indexan en Google y su miniatura va en **JPG de menos de 300 KB**: WhatsApp no muestra la vista previa si la imagen pesa más.
 
 ## Reglas
 
@@ -45,5 +55,7 @@ clientes/
 | Brief | https://nfokumkt-gdl.github.io/clientes/sara-vocal-coach/brief/ |
 | Cotización octubre 2026 | https://nfokumkt-gdl.github.io/clientes/sara-vocal-coach/cotizaciones/octubre-2026/ |
 | Línea gráfica | https://nfokumkt-gdl.github.io/clientes/sara-vocal-coach/branding/ |
+| Inicio Evara Studio | https://nfokumkt-gdl.github.io/clientes/evara-studio/ |
+| Landing de servicios Evara (pública) | https://nfokumkt-gdl.github.io/clientes/evara-studio/servicios/ |
 
-> El repositorio es público: cualquiera con la ruta puede abrir los documentos. Las páginas llevan `noindex` para no aparecer en Google.
+> El repositorio es público: cualquiera con la ruta puede abrir los documentos. Las páginas internas llevan `noindex` para no aparecer en Google; las landings públicas de clientes no.
